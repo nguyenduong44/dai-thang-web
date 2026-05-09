@@ -1,4 +1,5 @@
 import { companyInfo } from "../data";
+import logo from "../assets/dai-thang-logo.png";
 
 export default function Footer() {
   return (
@@ -6,13 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-slate-800">
           <div className="md:col-span-4">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-green-600 p-2 rounded-lg text-white font-black text-xl">
-                ĐT
-              </div>
-              <span className="text-white font-extrabold text-2xl tracking-tight">
-                ĐẠI THẮNG
-              </span>
+            <div className="mb-6">
+              <img
+                src={logo}
+                alt="Đại Thắng"
+                className="h-[100px] w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm leading-relaxed mb-6 pr-4">
               Chuyên sản xuất và cung cấp gạch không nung, gạch Terrazzo cao cấp

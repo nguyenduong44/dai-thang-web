@@ -1,29 +1,19 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { companyInfo, menuItems } from "../data";
+import logo from "../assets/dai-thang-logo.png";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-        <Link
-          to="/"
-          className="flex items-center gap-3 transition-transform hover:scale-105"
-        >
-          <div className="bg-green-700 p-2 rounded-lg">
-            <span className="text-white font-black text-2xl tracking-tighter">
-              ĐT
-            </span>
-          </div>
-          <div className="hidden sm:block">
-            <span className="font-extrabold text-green-800 text-xl tracking-tight block leading-tight">
-              ĐẠI THẮNG
-            </span>
-            <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">
-              Gạch không nung Sân Cu
-            </p>
-          </div>
+        <Link to="/" className="transition-transform hover:scale-105">
+          <img
+            src={logo}
+            alt="Đại Thắng Logo"
+            className="h-[100px] w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
